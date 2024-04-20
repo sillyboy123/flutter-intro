@@ -1,0 +1,98 @@
+Note{
+Remember to put ';' at the end of lines (the terminator)
+Dart is case sensitive (Sultan is different from sultan)
+main code should be in void main() {}
+String data type must start with capital S
+}
+
+Rules for valid variable  names
+    Lower and upper case letters
+    All digits from 0-9 (must  not be at the beginning)
+    Underscore(_)
+    Use camel case (myFirstName), makes it easier to read causespacing isn't allowed in variable naming
+
+Data types
+    String : Sting name = 'Sultan';
+    int : int age = 16;
+    double : double height = 1.86; 
+    bool : bool student = True;
+    to get result print(name);
+
+print("My name is " + name + " and i am" + age + " years old."); String concatenation
+print("My name is $name and i am $age years old); String interpolation
+print("Next year i'll be ${age + 1}); editing variables in string
+
+Special characters
+    Use r in a print statement before the quotation to escape any special character. It's called raw string.
+    (\) backslash causes the next symbol or letter after it to be ignored e.g print('My sister\'s book')
+    \n makes a new line in the console. Used in print statements
+    Using three double quotes at the beginning and three at the end the you can input words in the print statement on any line you wish. (Multi line stings).
+
+String Operations
+    string title = "Dart course".toUpperCase();....Turns to upper case letters
+    string title = "Dart course".toLowerCase();....Turns to lower case letters
+
+    print(title.contains('Dart'));....This will check if the variable has a certain letter or word.
+
+    string lovepizza = 'I love pizza';
+    string lovepasta = 'lovepizza.replaceAll('pizza', 'pasta');....This replaces a certain word in a string with another.
+
+Conversion of data types
+    int age = 16;
+    String agestring = age.toString();   
+    double height = 1.87;
+    string heightstring = height.toStringAsFixed(1);...Converts the double height to a string and rounds it up to 1dp
+    string ratingstring = '4.5';
+    double rating = double.parse(ratingstring)...To convert a string to a double
+
+Arithmetic operations 
+    ~/ causes a int division e.g 5~/2 will equal 2 instead of 2.5
+    % will give the remainder e.g 5%2 = 1
+
+Increment and decrement operators
+   int x = 1;
+   x++;...This is x + 1, you can do prefix incrementation and suffix incrementation
+   x--;...This is x - 1
+
+Logical and relational operators
+    (||) logical or operator
+    (&&) logical and operator
+    (!) logical not operator
+
+    int age = 16;
+    String type = age > 13 ? 'Teen' : 'Child';...Must be of same date typee
+    print(type);..............TRUE.....FALSE
+
+Hexadecimal notation, bitwise and shifting operation
+    0xA = 10
+    0x10 = 16
+    0x100 = 256 (16 square)
+    
+    int x = 0xF0;...binary: 11110000
+    int y = 0x0F;...binary: 00001111
+
+    |....or....&....and....^....Xor....~....Not
+    print((x&y).toRadixString(2))....11111111
+
+    int x = 4;...binary = 100
+    print((x >> 2).toRadixString(2));....same as dividing by 2....output = 10
+
+    
+`Dart type`
+A programming languge is static when types are checked at compile time......Dart is a statical typed language
+		      is dynamic when types are checked on the fly, during execution (at runtime)
+
+Type inference
+Using var will cause dart to infere the data type for us
+Using final cause the variable to be read only.... final name = "Sultan";
+Using const defines a compile-time constant
+Using dynamic causes a variable to take values of any type
+
+
+Control flow
+If/else statements
+
+
+
+
+    
